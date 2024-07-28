@@ -1,113 +1,158 @@
-/* Elements */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    background-image: url("/assets/background.webp");
-    background-size: cover;
-    background-position: center;
-    color: #000000;
-    background-attachment: fixed;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Lexend;
+    margin: 10px;
+    
+
+    --text: #e7eef4;
+    --background: #060b0f;
+    --primary: #97bcdd;
+    --secondary: #21527d;
+    --accent: #4996da;
 }
+
+/*------------------------------------------------------------------------------------------------------*/
 
 a {
-  color: #000000;
-  transition: all .2s ease-in;
+    color: var(--text);
+    transition: all .1s ease-in;
 }
-    
+
 a:hover {
-  color: #5a5a5a;
-  transition: all .2s ease-in;
-}
-
-
-/* Topnav */    
-
-.topnav {
-    backdrop-filter: blur(10px);
-    background-color: #ffffff10;
-    overflow: hidden;
-    font-weight: 500;
-  }
-  
-.topnav a {
-    float: right;
-    color: #000000;
-    text-align: center;
-    padding: 17px 19px;
-    
-    text-decoration: none;
-    font-size: 19px;
+    color: var(--primary);
     transition: all .2s ease-in;
-  }
-  
+}
 
-.topnav a:hover {
-    color: #1c1c1c;
-    background-color: #e7e7e797;
+hr {
+    border: 1px solid;
+    border-radius: 100px;
+}
+
+button {
+    transition: all .1s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
     transition: all .2s ease-in;
-  }
-  
-.topnav a.active {
-    background-color: #e7e7e797;
-    color: rgb(0, 0, 0);
-  }
-
-.logo {
-  padding: 4px 15px;
-  position: absolute;
-
+    color: #3c3f49;
 }
 
-.text {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-}
-
-
-/* Header */
+/*------------------------------------------------------------------------------------------------------*/
 
 .header {
-  margin: 20px 30px;
-  padding: 1px;
-  text-align: center;
-  backdrop-filter: blur(3px);
-  border-radius: 10px;
-  background-color: #ffffff61;
+    background: var(--secondary);
+    padding: 10px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
-.header_text {
-  font-size: 40px;
-  font-weight: 800;
+.header_buttons {
+    float: right;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 100px;
+
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.header_h2 {
-  font-size: 35px;
-  font-weight: 700;
+.header_logo {
+    position: absolute;
+    padding: 5px;
+    margin-left: 10px;
+
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
-
-/* Lists */
-
-.list {
-  margin: 10px 30px;
-  padding: 50px 30px;
-  text-align: center;
-  backdrop-filter: blur(3px);
-  border-radius: 10px;
-  background-color: #ffffff61
+.footer {
+    padding: 0px 20px;
+    text-align: center;
 }
 
-.list_heading {
-  color: #000000;
-  font-size: 35px;
-  font-weight: 700;
+/*------------------------------------------------------------------------------------------------------*/
+
+.latest {
+    margin-top: 15px;
+    padding: 25px;
+    background: var(--secondary);
+    border-radius: 30px;
+
+    overflow: hidden;
 }
 
-.list_text {
-  font-weight: 500;
+.video_frame {
+    position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56%;
+}
+
+.video_frame iframe {
+    position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border-radius: 20px;
+}
+
+.latest_text {
+    padding-top: 15px;
+    margin: 0px;
+    position: absolute;
+}
+
+.latest_text h2 {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.latest_text p {
+    margin: 0px;
+}
+
+.latest button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 50px;
+    padding: 19px 39px;
+    margin-top: 15px;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-family: Lexend;
+    font-weight: 500;
+
+    float: right;
+}
+
+.videos_button {
+    background-color: var(--secondary);
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 30px;
+
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.fotos_button {
+    background-color: var(--accent);
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 30px;
+
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
 }
