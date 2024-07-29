@@ -156,3 +156,50 @@ button:hover {
     font-size: 17px;
     font-weight: 600;
 }
+
+
+.player {
+    margin-top: 15px;
+    padding: 0px;
+    background: var(--accent);
+    border-radius: 30px;
+
+    overflow: hidden;
+}
+
+.player_text {
+    padding-top: 17px;
+    margin: 0px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.player_text h2 {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.player_text p {
+    margin: 0px;
+}
+
+.player_desc {
+    margin-top: 15px;
+    padding: 25px;
+    background: var(--secondary);
+    border-radius: 30px;
+    
+    overflow: hidden;
+}
+
+.player_desc h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.player_desc p {
+    margin: 0px;
+    margin-bottom: 5px;
+}
