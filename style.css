@@ -212,3 +212,46 @@ button:hover {
     margin: 0px;
     margin-bottom: 5px;
 }
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.photo {
+    margin-top: 15px;
+    padding: 25px;
+    background: var(--secondary);
+    border-radius: 30px;
+
+    overflow: hidden;
+}
+
+.photo_text {
+    padding-top: 5px;
+    margin: 0px;
+    position: absolute;
+}
+
+.photo_text h2 {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.photo_text p {
+    margin: 0px;
+}
+
+.photo button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 50px;
+    padding: 19px 39px;
+    margin-top: 5px;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-family: Lexend;
+    font-weight: 500;
+
+    float: right;
+}
